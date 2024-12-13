@@ -24,7 +24,6 @@ packages/
 *.proj.user
 
 # File chứa thông tin cá nhân
-*.config
 *.settings
 
 # File backup hoặc tạm thời
