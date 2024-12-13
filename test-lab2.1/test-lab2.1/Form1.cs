@@ -19,7 +19,7 @@ namespace test_lab2._1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-                
+
         }
         private bool checkRong()
         {
@@ -53,6 +53,35 @@ namespace test_lab2._1
                 return false;
             }
             return true;
+        }
+
+
+        private void btnNhan_Click_1(object sender, EventArgs e)
+        {
+            if (checkRong() && checkPare())
+            {
+                float num1 = float.Parse(txtNum1.Text);
+                float num2 = float.Parse(txtNum2.Text);
+                txtAnswer.Text = (num1 * num2).ToString();
+            }
+        }
+
+        private void btnChia_Click_1(object sender, EventArgs e)
+        {
+            if (checkRong() && checkPare())
+            {
+                float num1 = float.Parse(txtNum1.Text);
+                float num2 = float.Parse(txtNum2.Text);
+                if (num2 == 0)
+                {
+                    MessageBox.Show("Vui lòng nhập số bị chia khác 0", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    txtAnswer.Text = (num1 / num2).ToString();
+                }
+
+            }
         }
 
         private void btnCong_Click(object sender, EventArgs e)
