@@ -16,5 +16,43 @@ namespace test_lab2._1
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+                
+        }
+        private bool checkRong()
+        {
+            if (txtNum1.Text == "")
+            {
+                txtNum1.Focus();
+                MessageBox.Show("Vui Lòng Nhập Number1", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if (txtNum2.Text == "")
+            {
+                txtNum2.Focus();
+                MessageBox.Show("Vui Lòng Nhập Number2", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            return true;
+        }
+        private bool checkPare()
+        {
+            float num1, num2;
+            bool result1 = float.TryParse(txtNum1.Text, out num1);
+            if (!result1)
+            {
+                MessageBox.Show("Bạn đã nhập Number1 sai kiểu dữ liệu", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            bool result2 = float.TryParse(txtNum2.Text, out num2);
+            if (!result2)
+            {
+                MessageBox.Show("Bạn đã nhập Number2 sai kiểu dữ liệu", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            return true;
+        }
     }
 }
