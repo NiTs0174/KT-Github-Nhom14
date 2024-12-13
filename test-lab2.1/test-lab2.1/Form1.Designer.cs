@@ -87,6 +87,7 @@
             this.btnTru.TabIndex = 15;
             this.btnTru.Text = "-";
             this.btnTru.UseVisualStyleBackColor = true;
+            this.btnTru.Click += new System.EventHandler(this.btnTru_Click);
             // 
             // txtNum2
             // 
@@ -115,6 +116,7 @@
             this.btnCong.TabIndex = 12;
             this.btnCong.Text = "+";
             this.btnCong.UseVisualStyleBackColor = true;
+            this.btnCong.Click += new System.EventHandler(this.btnCong_Click);
             // 
             // txtNum1
             // 

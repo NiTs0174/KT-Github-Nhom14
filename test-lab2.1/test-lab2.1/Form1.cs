@@ -54,5 +54,25 @@ namespace test_lab2._1
             }
             return true;
         }
+
+        private void btnCong_Click(object sender, EventArgs e)
+        {
+            if (checkRong() && checkPare())
+            {
+                float num1 = float.Parse(txtNum1.Text);
+                float num2 = float.Parse(txtNum2.Text);
+                txtAnswer.Text = (num1 + num2).ToString();
+            }
+        }
+
+        private void btnTru_Click(object sender, EventArgs e)
+        {
+            if (checkRong() && checkPare())
+            {
+                float num1 = float.Parse(txtNum1.Text);
+                float num2 = float.Parse(txtNum2.Text);
+                txtAnswer.Text = (num1 - num2).ToString();
+            }
+        }
     }
 }
