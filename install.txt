@@ -1,0 +1,43 @@
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+IDE:
+	Mạng (Cisco):
+	Máy ảo (VMware):	
+	-----(DB)-----
+	SQL server management (MS):
+	Case Studio 2 (ERD):
+	StarUML (UseCase):
+	
+	-----(DEV)------		
+	DevC (C):			https://sourceforge.net/projects/orwelldevcpp/
+	Eclipse for Dev (Java):		https://www.eclipse.org/downloads/
+	Visual Studio (C#-WinForm):
+	Sublime Text (Python):
+
+	----- -----
+	VsCode (Web):		
+		//vscode-icons
+			!Bracket Pair Colorizer
+			//Bookmarks
+			Code spell Checker
+			!Settings Sync
+  		//Web
+			Live Server
+			Auto import/Rename Tag/!Close Tab //Import Cost
+			Path/npm Intelligent //IntelliCode
+			//ESLint/Prettier
+			//Vim/TabNine
+			Live Preview
+			Support HTML5
+			Github Copilot
+
+----------------------------------------------
+CMD:
+	Check Offical Win: 	slmgr.vbs /xpr
+	Check IP: 		ipconfig
+	Funny:			Window + r (Ok)--> cmd (Enter)--> color a (Enter)--> curl parrot.live
+
+Terminal:
+	Check battery: 		powercfg /batteryreport
+-------------------------------------------------------
+-------------------------------------------------------
